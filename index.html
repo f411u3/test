@@ -1,8 +1,10 @@
+<p>
 {% for image in site.static_files %}
   {% if image.path contains 'webapp' %}
     <a href="{{image.path}}">{{image.name}}</a>
   {% endif %}
 {% endfor %}
+</p>
 
 <head><title>Index of repo</title></head>
 <body>
