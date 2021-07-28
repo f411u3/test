@@ -1,13 +1,10 @@
-<p>
+<head><title>Index of repo</title></head>
+<body>
 {% for image in site.static_files %}
   {% if image.path contains 'webapp' %}
     <a href="{{image.path}}">{{image.name}}</a>
   {% endif %}
 {% endfor %}
-</p>
-
-<head><title>Index of repo</title></head>
-<body>
 <h1>Index of repo</h1><hr><pre><a href="../">../</a>
 <a href="Beta_channel/">Beta_channel/</a>                                      26-02-2021 08:43                   -
 </pre><hr>
