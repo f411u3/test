@@ -6,3 +6,7 @@
 </pre><hr>
 
 </body>
+
+{% for files in site.static_files %}
+  {{ files.path }}
+{% endfor %}
