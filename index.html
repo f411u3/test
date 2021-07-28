@@ -1,7 +1,6 @@
 {% for image in site.static_files %}
   {% if image.path contains 'webapp' %}
-    <p>{{image.path}} - {{image.modified_time}}</p>
-    <img src="{{site.baseurl}}{{image.path}}">
+    <a href="image.path">image.name</a>
   {% endif %}
 {% endfor %}
 
