@@ -1,12 +1,11 @@
 <head><title>Index of repo</title></head>
 <body>
 <h1>Index of repo</h1><hr><pre><a href="../">../</a>
+{% for files in site.static_files %}
+  {{ <a href="files.path">files.path/</a> }}
+{% endfor %}
 <a href="netflix.zip">netflix.zip/</a>                                    26-02-2021 08:43                   -
 <a href="Beta_channel/">Beta_channel/</a>                                      26-02-2021 08:43                   -
 </pre><hr>
 
 </body>
-
-{% for files in site.static_files %}
-  {{ files.path }}
-{% endfor %}
